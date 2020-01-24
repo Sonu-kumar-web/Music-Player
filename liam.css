@@ -1,0 +1,593 @@
+html {
+    background-color: #0c1027;
+    font-family: sans-serif;
+    color: white;
+    /* for scroll...................................................... */
+    position: fixed;
+}
+
+/* --------------Header------------------------------------------------------------------------------------------------------------------- */
+.head-container {
+    height: 12vh;
+    width: auto;
+    display: flex;
+    display: inline-block;
+    /* background-color: green; */
+    /* margin-bottom: 3vh; */
+
+    background-color: #0c1027;
+    /* margin-top: -1.5vh; */
+    top: 0px;
+}
+
+#block {
+    display: inline-block;
+}
+
+.size-adjust {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: inline-block;
+    display: flex;
+    color: white;
+}
+
+.head-left {
+    /* height: 10vh; */
+    width: 40vw;
+    /* background-color: red; */
+}
+
+.icon {
+    height: 10vh;
+    width: 10vw;
+}
+
+.icon img {
+    max-width: 10vh;
+    max-height: 10vw;
+    border-radius: 50%;
+    margin-left: 50%;
+}
+
+.name {
+    font-size: 4vh;
+    height: 10vh;
+    width: 8vw;
+}
+
+.fab {
+    background-color: transparent;
+    border: none transparent;
+    font-size: 3vh;
+    color: white;
+    cursor: pointer;
+    margin-left: 4vw;
+}
+
+.right {
+    height: 12vh;
+    width: 57vw;
+    /* background-color: cyan; */
+}
+
+.head-right {
+    height: 4vh;
+    width: 30vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    background-color: #12193e;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.search-button {
+    background-color: transparent;
+    /* color: white; */
+    margin-top: 0.5vh;
+    margin-left: 0.5vw;
+    border: none;
+}
+
+.search {
+    /* height: 3.vh; */
+    width: 25.5vw;
+    margin-left: -0.1vw;
+}
+
+.microphone img {
+    /* height: 18px; */
+    width: 20px;
+    cursor: pointer;
+    margin-left: 28vw;
+    margin-top: -3vh;
+}
+
+.notification img {
+    height: 18px;
+    width: 18px;
+    margin-left: 3vw;
+    cursor: pointer;
+}
+
+.my-profile {
+    margin-top: -9vh;
+    margin-left: 43vw;
+    cursor: pointer;
+}
+
+/* --------------------------main---------------------------------------------------------------------------------------------------------- */
+#main {
+    margin-top: -8vh;
+}
+
+.content {
+    width: 98vw;
+    display: flex;
+
+    height: 60vh;
+    padding-top: 15vh;
+    /* for scroll.......................................................... */
+    overflow-y: scroll;
+}
+
+.liam {
+    height: 48vh;
+    width: 60vw;
+    background-color: aqua;
+    margin-left: 5vw;
+    justify-content: space-between;
+}
+
+.liam-pic {
+    height: auto;
+    width: 25vw;
+    background-color: blueviolet
+}
+
+.liam-pic img {
+    height: 48vh;
+    width: 25vw;
+}
+
+.liam-detail {
+    height: auto;
+    width: 33vw;
+    background-color: blueviolet;
+}
+
+.play-all {
+    height: 5.5vh;
+    width: 10vw;
+    /* background-color: brown; */
+    text-align: center;
+}
+
+.collections {
+    height: 30vh;
+    width: 60vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    /* background-color: burlywood; */
+}
+
+.little {
+    height: 12vh;
+    background-color: #1a1e33;
+    margin-top: 1.5vh;
+}
+
+.num {
+    height: 12vh;
+    width: 4vw;
+    /* background-color: darkcyan; */
+}
+
+.little-image {
+    height: 10vh;
+    width: 10vh;
+    margin-left: 1vw;
+    /* background-color: darkcyan; */
+    margin-top: 1vh;
+}
+
+.little-image img {
+    height: 10vh;
+    width: 10vh;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.little-name {
+    height: 12vh;
+    width: 18vh;
+    margin-left: 1vw;
+    /* background-color: darkcyan; */
+}
+
+.little-time {
+    height: 12vh;
+    width: 6vh;
+    margin-left: 10vw;
+    /* background-color: darkcyan; */
+    text-align: center;
+}
+
+.little-heart {
+    height: 12vh;
+    width: 8vh;
+    margin-left: 14vw;
+    /* background-color: darkcyan; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.little-plus {
+    height: 12vh;
+    width: 5vh;
+    margin-left: 2vw;
+    /* background-color: darkcyan; */
+    text-align: center;
+    cursor: pointer;
+}
+
+/* -----------------------aside------------------------------------------------------------------------------------------------------- */
+.aside-main {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-scroll {
+    /* height: 70vh;
+    width: 27vw;
+    float: right;
+    margin-left: 0.5vw;
+    margin-top: -70vh; */
+    /* overflow-y: scroll; */
+    /* for scroll  ..................................................................*/
+}
+
+.aside-1 {
+    height: 35vh;
+    width: 29vw;
+    margin-right: 2vh;
+    /* background-color: darkgoldenrod; */
+    float: right;
+    margin-top: -68vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.aside-2 {
+    height: 26vh;
+    width: 29vw;
+    margin-right: 1vh;
+    /* background-color: darkgoldenrod; */
+    float: right;
+    margin-top: -26vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.aside-1-name {
+    height: 6vh;
+    width: 29vw;
+    margin-top: -73.5vh;
+    background-color: #0c1027;
+    position: fixed;
+    margin-left: 68vw;
+}
+
+.aside-1-part {
+    height: 18vh;
+    width: 29vw;
+    margin-top: 1vh;
+    /* background-color: darkmagenta; */
+    display: flex;
+    /* display: inline-block; */
+}
+
+.aside-1-part-image {
+    height: 18vh;
+    width: 18vh;
+    /* background-color: chartreuse; */
+}
+
+.aside-1-part-image img {
+    height: 18vh;
+    width: 18vh;
+    border-radius: 1vh;
+}
+
+.aside-1-part-name {
+    height: 18vh;
+    width: 23vh;
+    margin-left: 2vw;
+    /* background-color: chartreuse; */
+}
+
+.aside-1-part-icon {
+    height: 18vh;
+    width: 8vh;
+    margin-left: 0.5vw;
+    /* background-color: chartreuse; */
+    text-align: center;
+}
+
+.aside-2-detail {
+    height: 6vh;
+    width: 29vw;
+    margin-left: 68vw;
+    margin-top: -33vh;
+    background-color: #0c1027;
+    position: fixed;
+    /* height: 44vh;
+    width: 29vw;
+    margin-right: 2vh;
+    /* background-color: darkgoldenrod; */
+
+}
+
+.aside-2-div {
+    height: 12vh;
+    margin-top: 2vh;
+
+    /* background-color: darkmagenta; */
+}
+
+.aside-2-num {
+    height: 12vh;
+    width: 5vh;
+    /* background-color: chartreuse; */
+    text-align: center;
+}
+
+.aside-2-pic {
+    height: 12vh;
+    width: 12vh;
+    /* background-color: chartreuse; */
+    margin-left: 1vw;
+}
+
+.aside-2-pic img {
+    height: 12vh;
+    width: 12vh;
+}
+
+.aside-2-name {
+    height: 12vh;
+    width: 22vh;
+    /* background-color: chartreuse; */
+    margin-left: 1vw;
+}
+
+.aside-2-icon {
+    height: 12vh;
+    width: 7vh;
+    /* background-color: chartreuse; */
+    margin-left: 2vw;
+    text-align: center;
+}
+
+/* music-controll-----------------------------------------------------------  */
+.music-control {
+    height: 12vh;
+    background-color: #282828;
+    /* position: fixed; */
+}
+
+.footer-image {
+    /* height: 12vh; */
+    width: 6vw;
+    margin-left: 6vw;
+    /* background-color: blueviolet; */
+}
+
+.footer-image img {
+    height: 12vh;
+    width: 6vw;
+    float: none;
+}
+
+.footer-name {
+    /* height: 12vh; */
+    width: 12vw;
+    /* background-color: brown; */
+    margin-left: 1vw;
+    display: flex;
+    /* display: inline-block; */
+}
+
+.footer-text {
+    height: 12vh;
+    width: 6vw;
+    /* background-color: burlywood; */
+}
+
+.footer-icons {
+    height: 12vh;
+    width: 6vw;
+    /* background-color: blue; */
+    text-align: left;
+}
+
+.music-functions {
+    /* height: 12vh; */
+    width: 40vw;
+    /* background-color: burlywood; */
+    margin-left: 5vw;
+    overflow: hidden;
+}
+
+.control {
+    height: 6vh;
+    width: 40vw;
+    /* background-color: chartreuse; */
+    text-align: center;
+}
+
+.control img {
+    height: 15px;
+    width: 15px;
+    margin-left: 4vw;
+    display: flex;
+    display: inline-block;
+    color: whitesmoke;
+
+}
+
+.timer {
+    height: 2vh;
+    width: 40vw;
+    margin-top: 1.3vh;
+    margin-left: 2.5vw;
+    cursor: pointer;
+    /* background-color: cyan; */
+}
+
+.time-progress {
+    height: 1vh;
+    width: 30vw;
+    /* padding-top: 1vh; */
+    margin-left: 5vw;
+    margin-top: -1.5vh;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.progress {
+    width: 100%;
+    height: 6px;
+    /* margin-top: 1vh; */
+    background-color: green;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #b9b9b9 inset;
+    overflow: hidden;
+}
+
+.progress>div {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.thirty-five-percent {
+    width: 35%;
+    height: 6px;
+}
+
+.bubble {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    margin-top: -0.3vh;
+    border-radius: 50%;
+}
+
+.count {
+    height: 2vh;
+    width: 2vw;
+    /* background-color: indigo; */
+    margin-left: 3vw;
+}
+
+.count-2 {
+    height: 2vh;
+    width: 2vw;
+    /* background-color: indigo; */
+    margin-left: 35.2vw;
+    margin-top: -3vh;
+}
+
+.sound {
+    /* height: 12vh; */
+    width: 20vw;
+    margin-left: 5vw;
+    /* background-color: aqua; */
+}
+
+.sound-detail {
+    height: 5vh;
+    width: 20vw;
+    /* background-color: violet; */
+    margin-top: 3vh;
+    justify-content: space-between;
+}
+
+.sound-menu {
+    width: 2vw;
+    /* background-color: #12193e; */
+}
+
+.remote {
+    width: 2.5vw;
+    /* background-color: #12193e; */
+    margin-left: 1vw;
+}
+
+.volume {
+    width: 14vw;
+    height: 3vh;
+    /* background-color: #12193e; */
+    margin-right: 1vw;
+    margin-top: 1vh;
+    display: flex;
+    display: inline-block;
+    padding-left: 1vw;
+}
+
+.volume-progress {
+    height: 1vh;
+    width: 9vw;
+    /* padding-top: 1vh; */
+    /* margin-left: 5vw;
+    margin-top: -1.5vh; */
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    margin-left: 2vw;
+    margin-top: -2.8vh;
+    cursor: pointer
+}
+
+.v-progress {
+    width: 100%;
+    height: 6px;
+    /* margin-top: 1vh; */
+    background-color: green;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #b9b9b9 inset;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.v-progress>div {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.fifty-percent {
+    width: 50%;
+    height: 6px;
+}
+
+.bubble-2 {
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    margin-top: -0.3vh;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.full-screen {
+    width: 2vw;
+    /* background-color: #12193e; */
+    margin-right: 4vw;
+    cursor: pointer;
+}

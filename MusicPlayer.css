@@ -1,0 +1,917 @@
+html {
+  background-color: #0c1027;
+  font-family: sans-serif;
+  color: white;
+  /* for scroll...................................................... */
+  position: fixed;
+}
+
+/* Header------------------------------------------------ */
+.head-container {
+  height: 12vh;
+  width: auto;
+  display: flex;
+  display: inline-block;
+  /* background-color: green; */
+  /* margin-bottom: 3vh; */
+
+  background-color: #0c1027;
+  /* margin-top: -1.5vh; */
+  top: 0px;
+}
+
+#block {
+  display: inline-block;
+}
+
+.size-adjust {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: inline-block;
+  display: flex;
+  color: white;
+}
+
+.head-left {
+  /* height: 10vh; */
+  width: 40vw;
+  /* background-color: red; */
+}
+
+.icon {
+  height: 10vh;
+  width: 10vw;
+}
+
+.icon img {
+  max-width: 10vh;
+  max-height: 10vw;
+  border-radius: 50%;
+  margin-left: 50%;
+}
+
+.name {
+  font-size: 4vh;
+  height: 10vh;
+  width: 8vw;
+}
+
+.fab {
+  background-color: transparent;
+  border: none transparent;
+  font-size: 3vh;
+  color: white;
+  cursor: pointer;
+  margin-left: 4vw;
+}
+
+.right {
+  height: 12vh;
+  width: 57vw;
+  /* background-color: cyan; */
+}
+
+.head-right {
+  height: 4vh;
+  width: 30vw;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  background-color: #12193e;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.search-button {
+  background-color: transparent;
+  /* color: white; */
+  margin-top: 0.5vh;
+  margin-left: 0.5vw;
+  border: none;
+}
+
+.search {
+  /* height: 3.vh; */
+  width: 25.5vw;
+  margin-left: -0.1vw;
+}
+
+.microphone img {
+  /* height: 18px; */
+  width: 20px;
+  cursor: pointer;
+  margin-left: 28vw;
+  margin-top: -3vh;
+}
+
+.notification img {
+  height: 18px;
+  width: 18px;
+  margin-left: 3vw;
+  cursor: pointer;
+}
+
+.my-profile {
+  margin-top: -9vh;
+  margin-left: 43vw;
+  cursor: pointer;
+}
+
+/* main............................................................................................................... */
+#main {
+  margin-top: -8vh;
+}
+
+.content {
+  width: 98vw;
+  display: flex;
+
+  height: 60vh;
+  padding-top: 15vh;
+  /* for scroll.......................................................... */
+  overflow-y: scroll;
+}
+
+.text-div {
+  width: 66vw;
+  /* background-color: crimson; */
+  display: flex;
+  margin-top: -2vh;
+  margin-bottom: 1vh;
+  margin-left: 2vw;
+}
+
+.parent-div {
+  width: 70vw;
+  /* background-color: darkmagenta; */
+  display: flex;
+  display: block;
+  margin-left: 2vw;
+}
+
+.general-name {
+  justify-content: space-around;
+}
+
+.recent-songs {
+  height: 48vh;
+  width: 70vw;
+  /* background-color: burlywood; */
+  justify-content: space-evenly;
+  /* margin-left: 2vw; */
+}
+
+.zoom:hover {
+  transform: scale(1.15);
+}
+
+.song {
+  height: 40vh;
+  width: 18vw;
+  transition: 0.5s;
+}
+
+.song img {
+  height: 40vh;
+  width: 20vw;
+}
+
+.latest-songs {
+  height: 65vh;
+  width: 66vw;
+  /* background-color: green; */
+  justify-content: space-evenly;
+  margin-left: 4vw;
+  margin-bottom: 3vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.latest-collection {
+  height: 60vh;
+  width: 63.1vw;
+  display: flex;
+  margin-top: -2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  /* background-color: salmon; */
+}
+
+/* .latest-collection p {
+  opacity: 0.8;
+} */
+
+.heading h3 {
+  height: 4vh;
+  width: 66vw;
+  /* background-color: red; */
+  margin-top: 0vh;
+}
+
+.songs-detail {
+  height: 27vh;
+  width: 66vw;
+  /* background-color: red; */
+  margin-left: -2.9vw;
+  display: flex;
+  /* flex-grow: 1;
+  flex-shrink: 1; */
+  /* display: inline-block; */
+  justify-content: space-between;
+
+  /* height: 24vh;
+  width: 70vw;
+  margin: 1vh 7.5vh 2vh 0vh;
+  justify-content: space-around; */
+}
+
+.latest-songs-detail {
+  height: 27vh;
+  width: 32vw;
+  justify-content: space-between;
+  display: flex;
+  /* background-color: purple; */
+}
+
+.latest-song-image {
+  height: 27vh;
+  width: 14.7vw;
+  /* background-color: blue; */
+  /* display: inline-block; */
+}
+
+.latest-song-image img {
+  height: 27vh;
+  width: 14.7vw;
+}
+
+.latest-song-detail-image {
+  height: 27vh;
+  width: 12vw;
+  /* background-color: blue; */
+}
+
+.latest-song-detail-name {
+  height: 20vh;
+  width: 9vw;
+  /* background-color: yellowgreen; */
+}
+
+.latest-song-detail-icon {
+  height: 27vh;
+  width: 4vw;
+  margin-top: -2.9vh;
+  /* background-color: aqua; */
+  /* background-color: orangered; */
+  /* margin-left: 9.5vw;
+  margin-top: -20vh; */
+}
+
+/* onClick-------------------------------------------------------------------------------------------------------------- */
+
+.queue-dropdown-1 {
+  text-align: right;
+}
+
+.submenu-1 {
+  list-style-type: none;
+  margin-left: -14vw;
+  margin-top: -1.5vh;
+  width: 190px;
+  background-color: whitesmoke;
+  border-radius: 40px 0% 40px 40px;
+}
+
+.submenu-1 li {
+  color: black;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+#check01-1,
+ul.submenu-1 {
+  display: none;
+  /* position: fixed; */
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+input:checked~ul.submenu-1 {
+  display: block;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+.queue-dropdown-2 {
+  text-align: right;
+}
+
+.submenu-2 {
+  list-style-type: none;
+  margin-left: -14vw;
+  margin-top: -1.5vh;
+  width: 190px;
+  background-color: whitesmoke;
+  border-radius: 40px 0% 40px 40px;
+}
+
+.submenu-2 li {
+  color: black;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+#check01-2,
+ul.submenu-2 {
+  display: none;
+  /* position: fixed; */
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+input:checked~ul.submenu-2 {
+  display: block;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+.queue-dropdown-3 {
+  text-align: right;
+}
+
+.submenu-3 {
+  list-style-type: none;
+  margin-left: -14vw;
+  margin-top: -1.5vh;
+  width: 190px;
+  background-color: whitesmoke;
+  border-radius: 40px 0% 40px 40px;
+}
+
+.submenu-3 li {
+  color: black;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+#check01-3,
+ul.submenu-3 {
+  display: none;
+  /* position: fixed; */
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+input:checked~ul.submenu-3 {
+  display: block;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+.queue-dropdown-4 {
+  text-align: right;
+}
+
+.submenu-4 {
+  list-style-type: none;
+  margin-left: -14vw;
+  margin-top: -1.5vh;
+  width: 190px;
+  background-color: whitesmoke;
+  border-radius: 40px 0% 40px 40px;
+}
+
+.submenu-4 li {
+  color: black;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+#check01-4,
+ul.submenu-4 {
+  display: none;
+  /* position: fixed; */
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+input:checked~ul.submenu-4 {
+  display: block;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+.latest-song-detail-icon img {
+  width: 1.5vw;
+  height: 3vh;
+  margin-top: -2vh;
+  cursor: pointer;
+
+  /* margin-top: 3.vh;
+  margin-left: 2vw; */
+}
+
+.artists-detail {
+  /* height: 30vh; */
+  width: 66vw;
+  justify-content: space-evenly;
+  margin-left: 2vw;
+  margin-top: -2vh;
+  /* margin-bottom: 3vh; */
+  background-color: none;
+}
+
+.artist-name {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+  /* margin-top: 3vh; */
+}
+
+.artist-name img {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+}
+
+.station-detail {
+  height: 25vh;
+  width: 70vw;
+  /* background-color: firebrick; */
+  justify-content: space-evenly;
+  margin-left: 2vw;
+  margin-bottom: 3vh;
+}
+
+.station-name-logo {
+  height: 20vh;
+  width: 20vh;
+  margin-top: 2.5vh;
+  position: relative;
+  text-align: center;
+  float: none;
+}
+
+.station-name-logo img {
+  height: 20vh;
+  width: 20vh;
+  /* margin-top: 2.5vh; */
+}
+
+.station-name {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  margin-top: 4vh;
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* float: none; */
+}
+
+.station-name h4 {
+  text-align: center;
+  margin-top: -9vh;
+}
+
+.station-name img {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  /* margin-top: 4vh; */
+}
+
+.station-name-logo-text {
+  width: 10vh;
+  height: 10vh;
+  /* background-color: darkorchid; */
+  /* position: absolute; */
+  margin-top: -9vh;
+  margin-left: 2.3vw;
+  font-size: 3vh;
+  /* opacity: 0.6; */
+}
+
+.station-name-text {
+  width: 10vh;
+  height: 10vh;
+  /* background-color: darkorchid; */
+  /* position: absolute; */
+  margin-top: -11vh;
+  margin-left: 2.8vw;
+  font-size: 2vh;
+  /* opacity: 1; */
+}
+
+.song-type {
+  height: 30vh;
+  width: 70vw;
+  justify-content: space-evenly;
+  margin-left: 2vw;
+  margin-bottom: 3vh;
+  overflow: hidden;
+}
+
+.song-type-name {
+  /* height: 25vh;
+  width: 21vw; */
+  height: 100%;
+  width: 100%;
+  margin-bottom: 3vh;
+  transition: 0.5s;
+  /* float: none; */
+
+  overflow: hidden;
+}
+
+.zoom-2:hover {
+  transform: scale(1.15);
+}
+
+.song-type-name img {
+  height: 25vh;
+  width: 21vw;
+}
+
+.song-type-name h4 {
+  font-size: 2vw;
+  margin-top: -15vh;
+  margin-left: 8vw;
+}
+
+.latest-language {
+  /* height: 30vh; */
+  width: 68vw;
+  justify-content: space-evenly;
+  margin-left: 1vw;
+  /* margin-bottom: 3vh; */
+}
+
+.text-div p {
+  font-size: 12px;
+  margin-top: -2.8vh;
+  /* opacity: 0.6; */
+}
+
+.latest-language-name {
+  height: 20vh;
+  width: 10.2vw;
+  justify-content: space-between;
+  margin-top: -2vh;
+  /* margin-left: -2vw; */
+  /* margin-bottom: 3vh; */
+}
+
+.latest-language-name img {
+  height: 20vh;
+  width: 10.2vw;
+  border-radius: 6%;
+}
+
+.aside-part {
+  height: 70vh;
+  width: 27vw;
+  float: right;
+  margin-left: 0.5vw;
+  margin-top: -70vh;
+  overflow-y: scroll;
+  /* for scroll  ..................................................................*/
+}
+
+.aside-div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-div-detail {
+  height: 15vh;
+  margin-top: 2vh;
+  /* background-color: silver; */
+  /* justify-content: space-evenly; */
+}
+
+.aside-num {
+  width: 2vw;
+  height: 5vh;
+  margin-top: 1.5vh;
+  /* background-color: steelblue; */
+  display: flex;
+}
+
+.aside-num {
+  justify-content: space-evenly;
+}
+
+.aside-image {
+  width: 7vw;
+  /* background-color: springgreen; */
+}
+
+.aside-image img {
+  height: 10vh;
+  width: 6vw;
+  /* background-color: springgreen; */
+  border-radius: 8%;
+}
+
+.aside-image-detail {
+  width: 8vw;
+  /* background-color: tan; */
+  margin-left: -0.5vw;
+}
+
+/* .aside-div-detail p {
+  opacity: 0.6;
+} */
+
+.aside-heart {
+  width: 5vw;
+  margin-left: 2vw;
+  /* background-color: turquoise; */
+}
+
+.aside-heart img {
+  width: 1.2vw;
+  margin-left: 1.5vw;
+  margin-top: 2vh;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------Onclick aside------------ */
+
+.queue-dropdown {
+  text-align: right;
+}
+
+.submenu {
+  list-style-type: none;
+  margin-left: -11vw;
+  margin-top: -1vh;
+  width: 150px;
+  background-color: whitesmoke;
+  border-radius: 15px 0% 15px 15px;
+}
+
+.submenu li {
+  color: black;
+  text-align: left;
+  font-weight: normal;
+}
+
+#check01,
+ul.submenu {
+  display: none;
+  position: fixed;
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+input:checked~ul.submenu {
+  display: block;
+}
+
+/* ---------Footer------------------------------------------------------------------------------------------ */
+
+.music-control {
+  height: 12vh;
+  background-color: #282828;
+  /* position: fixed; */
+}
+
+.footer-image {
+  /* height: 12vh; */
+  width: 6vw;
+  margin-left: 6vw;
+  /* background-color: blueviolet; */
+}
+
+.footer-image img {
+  height: 12vh;
+  width: 6vw;
+  float: none;
+}
+
+.footer-name {
+  /* height: 12vh; */
+  width: 12vw;
+  /* background-color: brown; */
+  margin-left: 1vw;
+  display: flex;
+  /* display: inline-block; */
+}
+
+.footer-text {
+  height: 12vh;
+  width: 6vw;
+  /* background-color: burlywood; */
+}
+
+.footer-icons {
+  height: 12vh;
+  width: 6vw;
+  /* background-color: blue; */
+  text-align: left;
+}
+
+.music-functions {
+  /* height: 12vh; */
+  width: 40vw;
+  /* background-color: burlywood; */
+  margin-left: 5vw;
+  overflow: hidden;
+}
+
+.control {
+  height: 6vh;
+  width: 40vw;
+  /* background-color: chartreuse; */
+  text-align: center;
+}
+
+.control img {
+  height: 15px;
+  width: 15px;
+  margin-left: 4vw;
+  display: flex;
+  display: inline-block;
+  color: whitesmoke;
+
+}
+
+.timer {
+  height: 2vh;
+  width: 40vw;
+  margin-top: 1.3vh;
+  margin-left: 2.5vw;
+  cursor: pointer;
+  /* background-color: cyan; */
+}
+
+.time-progress {
+  height: 1vh;
+  width: 30vw;
+  /* padding-top: 1vh; */
+  margin-left: 5vw;
+  margin-top: -1.5vh;
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.progress {
+  width: 100%;
+  height: 6px;
+  /* margin-top: 1vh; */
+  background-color: green;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px #b9b9b9 inset;
+  overflow: hidden;
+}
+
+.progress>div {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.thirty-five-percent {
+  width: 35%;
+  height: 6px;
+}
+
+.bubble {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  margin-top: -0.3vh;
+  border-radius: 50%;
+}
+
+.count {
+  height: 2vh;
+  width: 2vw;
+  /* background-color: indigo; */
+  margin-left: 3vw;
+}
+
+.count-2 {
+  height: 2vh;
+  width: 2vw;
+  /* background-color: indigo; */
+  margin-left: 35.2vw;
+  margin-top: -3vh;
+}
+
+.sound {
+  /* height: 12vh; */
+  width: 20vw;
+  margin-left: 5vw;
+  /* background-color: aqua; */
+}
+
+.sound-detail {
+  height: 5vh;
+  width: 20vw;
+  /* background-color: violet; */
+  margin-top: 3vh;
+  justify-content: space-between;
+}
+
+.sound-menu {
+  width: 2vw;
+  /* background-color: #12193e; */
+}
+
+.remote {
+  width: 2.5vw;
+  /* background-color: #12193e; */
+  margin-left: 1vw;
+}
+
+.volume {
+  width: 14vw;
+  height: 3vh;
+  /* background-color: #12193e; */
+  margin-right: 1vw;
+  margin-top: 1vh;
+  display: flex;
+  display: inline-block;
+  padding-left: 1vw;
+}
+
+.volume-progress {
+  height: 1vh;
+  width: 9vw;
+  /* padding-top: 1vh; */
+  /* margin-left: 5vw;
+  margin-top: -1.5vh; */
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  margin-left: 2vw;
+  margin-top: -2.8vh;
+  cursor: pointer
+}
+
+.v-progress {
+  width: 100%;
+  height: 6px;
+  /* margin-top: 1vh; */
+  background-color: green;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px #b9b9b9 inset;
+  overflow: hidden;
+  cursor: pointer
+}
+
+.v-progress>div {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.fifty-percent {
+  width: 50%;
+  height: 6px;
+}
+
+.bubble-2 {
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  margin-top: -0.3vh;
+  border-radius: 50%;
+  cursor: pointer
+}
+
+.full-screen {
+  width: 2vw;
+  /* background-color: #12193e; */
+  margin-right: 4vw;
+  cursor: pointer;
+}
